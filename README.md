@@ -1,3 +1,11 @@
+
+# Simple TODO List
+
+Simple todo app with Typsescript 
+
+Using Hooks , Styled Components , Routes and more
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
