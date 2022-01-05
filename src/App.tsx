@@ -1,26 +1,31 @@
 import React from 'react';
+import { BrowserRouter ,Switch, Route} from 'react-router-dom';
 import logo from './logo.svg';
-import './App.css';
+import ListScreen from './screens/ListScreen';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Switch>
+      <Route exact path="/"  >
+        <ListScreen></ListScreen>
+      </Route>
+      <Route path="/focus" >
+      <div>Focus View</div>
+      </Route>
+    </Switch>
+    </BrowserRouter>
   );
+}
+
+function ListView() {
+  return <h2>List View</h2>;
+}
+
+
+function FocusView() {
+  return <h2>Focus View</h2>;
 }
 
 export default App;
