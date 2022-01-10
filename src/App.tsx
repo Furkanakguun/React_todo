@@ -28,16 +28,6 @@ function App() {
     );
   }
 
-  //   const handleNewTaskKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
-  //     if (e.key == "Enter" && newTaskLabel != '') {
-  //         setTasks(tasks => 
-  //         [...tasks, 
-  //         { id: nanoid(), label: newTaskLabel, isComplete: false }
-  //         ])
-  //         setNewTaskLabel('');
-  //     }
-  // }
-
 
   const addTask = (task: Pick<Task, 'label'>) => {
     const id = nanoid();
