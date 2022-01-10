@@ -10,7 +10,7 @@ const FocusScreen: React.FC<Props> = ({ tasks , updateTaskCompletion }) => {
 
     const handleMarkCompleted = () => {
         updateTaskCompletion(task.id,true);
-    }
+    }  
 
     return task ? (
         <div>
