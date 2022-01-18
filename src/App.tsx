@@ -13,7 +13,7 @@ import { Task } from './types';
 const Layout = styled.div`
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;min-height:100vh;
     padding: 35px;
 `;
 
@@ -79,15 +79,6 @@ function App() {
       </BrowserRouter>
     </>
   );
-}
-
-function ListView() {
-  return <h2>List View</h2>;
-}
-
-
-function FocusView() {
-  return <h2>Focus View</h2>;
 }
 
 export default App;
