@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const colors = {
-    primary: "#FFC93F",
+    primary: "#E74C3C",
 }
 
 export const GlobalStyle =  createGlobalStyle`

@@ -26,7 +26,7 @@ const List = styled.div`
 const ListItem = styled.label`
   align-items: center;
   display: flex;
-  font-size: 18px;
+  font-size: 24px;
   padding: 4px 0;
 `;
 
@@ -79,7 +79,9 @@ const ListScreen: React.FC<Props> = () => {
         <Container>
             <List>
                 {tasks.map((task) => (
-                    <ListItem key={task.id}>
+                    <ListItem key={task.id} style={{
+                        textDecoration: task.isComplete ? 'line-through' : 'none'
+                      }}>
                         <Checkbox
                             checked={task.isComplete}
                             onChange={handleTaskCompleteChange(task)}

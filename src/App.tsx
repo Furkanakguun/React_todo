@@ -59,12 +59,12 @@ function App() {
         <TaskContext.Provider value={[tasks, setTasks]}>
           <Layout>
             <Nav>
-              <TabButton exact to="/" activeClassName="active">
+              {/* <TabButton exact to="/" activeClassName="active">
                 List
               </TabButton>
               <TabButton to="/focus" activeClassName="active">
                 Focus
-              </TabButton>
+              </TabButton> */}
             </Nav>
             <Switch>
               <Route exact path="/"  >
