@@ -45,6 +45,12 @@ const Input = styled.input`
   padding: 20px 24px;
 `;
 
+const Label = styled.label`
+ font-size: 30px;
+ background-color: #f44336;
+ border-radius: 15px;
+ padding: 10px 12px;
+`;
 type Props = {};
 
 const ListScreen: React.FC<Props> = () => {
@@ -77,11 +83,13 @@ const ListScreen: React.FC<Props> = () => {
 
     return (
         <Container>
+            <Label>Tasks</Label>
+            <Spacer height={30} />
             <List>
                 {tasks.map((task) => (
                     <ListItem key={task.id} style={{
                         textDecoration: task.isComplete ? 'line-through' : 'none'
-                      }}>
+                    }}>
                         <Checkbox
                             checked={task.isComplete}
                             onChange={handleTaskCompleteChange(task)}
@@ -97,7 +105,7 @@ const ListScreen: React.FC<Props> = () => {
             </List>
             <Spacer height={30} />
             <Input
-                placeholder="Add a task"
+                placeholder="Add a task and press enter"
                 value={newTaskLabel}
                 onChange={handleNewTaskLabelChange}
                 onKeyPress={handleNewTaskKeyPress}

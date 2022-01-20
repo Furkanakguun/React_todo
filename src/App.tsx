@@ -61,8 +61,8 @@ function App() {
             <Nav>
               {/* <TabButton exact to="/" activeClassName="active">
                 List
-              </TabButton>
-              <TabButton to="/focus" activeClassName="active">
+              </TabButton> */}
+              {/* <TabButton to="/focus" activeClassName="active">
                 Focus
               </TabButton> */}
             </Nav>
